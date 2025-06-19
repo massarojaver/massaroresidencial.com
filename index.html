@@ -1,0 +1,1293 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="shortcut icon" href="https://www.javer.com.mx/casasencancun/assets/images/favicon.ico"
+        type="image/x-icon">
+    <title>Massaro - JAVER</title>
+    <meta name="description"
+        content="Enriquece tu futuro invirtiendo en una zona de alta plusvalía. Massaro residencial, fraccionamiento dentro de Zibatá con exclusivas casas con roof garden y amenidades de lujo, donde las familias disfrutarán de la más alta calidad de vida. Todo lo que necesitas en un solo lugar: estilo de vida, funcionalidad y comodidad.">
+    <meta property="og:title" content="Massaro - JAVER">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content>
+    <meta property="og:site_name" content="JAVER">
+    <meta property="og:description"
+        content="Enriquece tu futuro invirtiendo en una zona de alta plusvalía. Massaro residencial, fraccionamiento dentro de Zibatá con exclusivas casas con roof garden y amenidades de lujo, donde las familias disfrutarán de la más alta calidad de vida. Todo lo que necesitas en un solo lugar: estilo de vida, funcionalidad y comodidad.">
+    <meta property="og:locale" content="es_MX">
+    <meta property="og:image" content>
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="1440">
+    <meta property="og:image:height" content="870">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Massaro - JAVER">
+    <meta name="twitter:description"
+        content="Enriquece tu futuro invirtiendo en una zona de alta plusvalía. Massaro residencial, fraccionamiento dentro de Zibatá con exclusivas casas con roof garden y amenidades de lujo, donde las familias disfrutarán de la más alta calidad de vida. Todo lo que necesitas en un solo lugar: estilo de vida, funcionalidad y comodidad.">
+    <meta name="twitter:image" content>
+    <!-- <script>!function (e, t, a, n, g) { e[n] = e[n] || [], e[n].push({ "gtm.start": (new Date).getTime(), event: "gtm.js" }); var m = t.getElementsByTagName(a)[0], r = t.createElement(a); r.async = !0, r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-P68DJB7", m.parentNode.insertBefore(r, m) }(window, document, "script", "dataLayer");</script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="validaciones.css">
+    <style>
+        :root {
+            --blue: #313a41;
+            --white: #fff;
+            --cream: #c9a97d !important;
+        }
+
+        * {
+            font-family: 'Poppins', sans-serif !important;
+        }
+
+        select {
+            display: none;
+        }
+
+        [name="phone"] {
+            border-radius: .25rem !important;
+        }
+
+        .form-check {
+            display: flex;
+            /* align-content: center; */
+            flex-direction: row;
+            align-items: center;
+            gap: 8px;
+        }
+
+        label.form-check-label {
+            margin: 0 !important;
+        }
+
+        [type="submit"] {
+            margin-top: 20px;
+        }
+
+        .responsive-list {
+            display: grid;
+            gap: 0.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .responsive-list li {
+            background: #f0f0f0;
+            padding: 0.5rem;
+            border-radius: 4px;
+        }
+
+        .row.amenidades {
+            --bs-gutter-x: 0;
+        }
+
+        .icon {
+            fill: var(--blue);
+        }
+
+        [id*=error] {
+            color: #ff3d3d;
+        }
+
+
+        .playa .banner {
+            margin-top: 0 !important;
+            padding-bottom: 50px;
+
+        }
+
+        .card-tipo .card-caption .cc-inner .tag {
+            background-color: #313e48;
+        }
+
+        .tipo-hogar .contw .title-s1,
+        .tipo-hogar .contw .title-sm {
+            color: #fff;
+        }
+
+        .card-tipo .card-caption {
+            padding-right: 0em;
+            box-shadow: 0px 0px 36px #a8a8a869;
+            ;
+        }
+
+        .btn.btn-solid,
+        .tipo-hogar .filtro-cont .btn-solid.btn {
+            background: var(--white);
+        }
+
+        .btn.btn-solid:focus,
+        .btn.btn-solid:hover {
+            background: var(--white);
+        }
+
+        .main-footer {
+            background-color: #78572c;
+            padding: 30px 0;
+            position: relative;
+            z-index: 100;
+        }
+
+        /*--------------------------------------------------------------
+	Common
+--------------------------------------------------------------*/
+
+        .bg-gradient:before {
+            position: absolute;
+
+            content: " ";
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .module-title {
+            position: relative;
+            letter-spacing: 4px;
+            text-align: center;
+            font-weight: 400;
+            font-size: 30px;
+            color: #111;
+            margin: 0 0 70px;
+        }
+
+        .module-subtitle {
+            text-align: center;
+            font-size: 16px;
+            color: #111;
+            margin-bottom: 70px;
+        }
+
+
+
+        /* Caption */
+        .titan-caption {
+            position: relative;
+            display: table;
+            height: 100%;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .titan-caption {
+            position: relative;
+            display: table;
+            height: 100%;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .caption-content {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+
+
+        /* Navbar search
+
+.dropdown-search {
+	position: relative;
+	padding: 5px;
+}
+
+.dropdown-search .form-control {
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 11px;
+}
+
+.search-btn {
+	position: absolute;
+	background: transparent;
+	border: none;
+	overflow: hidden;
+	top: 50%;
+	right: 1px;
+	width: 42px;
+	height: 40px;
+	line-height: 38px;
+	font-size: 14px;
+	outline: none;
+	color: #999;
+	margin-top: -20px;
+}*/
+        /*--------------------------------------------------------------
+	Header
+--------------------------------------------------------------*/
+        .home-section {
+            position: relative;
+            background-color: #fff;
+            background-repeat: no-repeat;
+            background-position: center center;
+            width: 100%;
+            z-index: 0;
+            background-size: cover;
+        }
+
+
+
+
+        /* Landing Page Header */
+        .landing-header:before {
+            position: absolute;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(119, 47, 109, 0.52) 95%, rgba(115, 35, 105, 0.58) 100%);
+            content: " ";
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+        }
+
+        .tipo-hogar .contw .title-s1,
+        .tipo-hogar .contw .title-sm {
+            color: #fff;
+        }
+
+        .playa .banner .contw p {
+            background-color: transparent;
+            color: white;
+            box-shadow: none;
+        }
+
+        section#home {
+            padding-top: 0 !important;
+        }
+
+        .formulario {
+            background-color: #977549;
+        }
+
+        .formulario form .form-group .input-group .input-group-text {
+            background-color: #ffffff;
+            border-color: var(--blue);
+            color: #000;
+        }
+
+        button#submitForm {
+            background: var(--cream);
+        }
+
+        .formulario {
+            padding: 50px 50px 50px;
+        }
+
+        .contacto::before {
+            background-color: #fff;
+        }
+
+        .contacto .contw .info .azul.lead strong,
+        .contacto .contw .info .modal .modal-dialog .modal-body .playa .banner .cont p.azul strong,
+        .contacto .contw .info .playa .banner .modal .modal-dialog .modal-body .cont p.azul strong,
+        .contacto .modal .modal-dialog .modal-body .cont .info .azul.lead strong,
+        .contacto .modal .modal-dialog .modal-body .cont .info .playa .banner .contw p.azul strong,
+        .contacto .modal .modal-dialog .modal-body .playa .banner .cont .info p.azul strong,
+        .contacto .playa .banner .contw .info p.azul strong,
+        .contacto .playa .banner .modal .modal-dialog .modal-body .cont .info p.azul strong,
+        .modal .modal-dialog .modal-body .contacto .cont .info .azul.lead strong,
+        .modal .modal-dialog .modal-body .contacto .cont .info .playa .banner .contw p.azul strong,
+        .modal .modal-dialog .modal-body .contacto .playa .banner .cont .info p.azul strong,
+        .modal .modal-dialog .modal-body .playa .banner .contacto .cont .info p.azul strong,
+        .playa .banner .contacto .contw .info p.azul strong,
+        .playa .banner .contacto .modal .modal-dialog .modal-body .cont .info p.azul strong,
+        .playa .banner .modal .modal-dialog .modal-body .contacto .cont .info p.azul strong,
+        .title-s1.azul strong,
+        .contacto .contw .info .lead strong,
+        .contacto .contw .info .modal .modal-dialog .modal-body .playa .banner .cont p strong,
+        .contacto .contw .info .playa .banner .modal .modal-dialog .modal-body .cont p strong,
+        .contacto .modal .modal-dialog .modal-body .cont .info .lead strong,
+        .contacto .modal .modal-dialog .modal-body .cont .info .playa .banner .contw p strong,
+        .contacto .modal .modal-dialog .modal-body .playa .banner .cont .info p strong,
+        .contacto .playa .banner .contw .info p strong,
+        .contacto .playa .banner .modal .modal-dialog .modal-body .cont .info p strong,
+        .modal .modal-dialog .modal-body .contacto .cont .info .lead strong,
+        .modal .modal-dialog .modal-body .contacto .cont .info .playa .banner .contw p strong,
+        .modal .modal-dialog .modal-body .contacto .playa .banner .cont .info p strong,
+        .modal .modal-dialog .modal-body .playa .banner .contacto .cont .info p strong,
+        .playa .banner .contacto .contw .info p strong,
+        .playa .banner .contacto .modal .modal-dialog .modal-body .cont .info p strong,
+        .playa .banner .modal .modal-dialog .modal-body .contacto .cont .info p strong {
+            color: var(--blue) !important;
+        }
+
+        .main-header .contw {
+
+            justify-content: space-between;
+        }
+
+        .main-header .contw .nav-cont nav,
+        .main-header .modal .modal-dialog .modal-body .cont .nav-cont nav,
+        .modal .modal-dialog .modal-body .main-header .cont .nav-cont nav {
+            border-left: none;
+            margin-left: 0px;
+            padding-left: 0px;
+        }
+
+        .formulario h2 {
+            color: var(--white);
+            font-weight: 600;
+        }
+
+
+        /* ANIMACIÓN */
+
+        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900&display=swap');
+
+
+        /* body{
+ 	margin:0;
+ 	font-family: 'Poppins', sans-serif;
+ 	font-weight: 400;
+	background-color: black}
+ 
+ 
+ *{
+ 	box-sizing: border-box;
+ }
+
+ .container{
+ 	max-width: 1170px;
+ 	width: 100%;
+ 	margin:auto;
+ }  */
+
+        .home {
+            /* height: 100vh; */
+            background-image: url("images/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-wrap: wrap;
+            /* padding:50px 15px; */
+            position: relative;
+        }
+
+        /* .home::before{
+ 	content: '';
+ 	position: absolute;
+ 	left:0;
+ 	top:0;
+ 	width: 100%;
+ 	height: 100%;
+ 	background-color: rgba(0,0,0,0.8);
+ 	z-index: 1;
+ }  */
+
+        .home .home-text {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+
+        .home .home-text p {
+            margin: 0;
+            overflow-y: hidden;
+        }
+
+        .home .home-text p span {
+            font-weight: 700;
+            display: inline-block;
+            display: none;
+            font-family: "FoxSansPro Heavy", Arial, Helvetica, sans-serif;
+            font-size: 120px;
+            line-height: 1.3em;
+            color: #fff;
+            text-transform: uppercase
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 100%
+            }
+
+            .home .home-text p span {
+                font-size: 4.5rem;
+            }
+        }
+
+        @media (max-width: 767.98px) {
+            .home .home-text p span {
+                font-size: 9vw;
+            }
+        }
+
+
+        .home .home-text p span.text-in {
+            display: block;
+            animation: textIn .5s ease;
+        }
+
+        .home .home-text p span.text-out {
+            animation: textOut .5s ease;
+        }
+
+        .main-banner .frase .inner {
+            max-width: 1200px;
+        }
+
+        @keyframes textIn {
+            0% {
+                transform: translateY(100%);
+            }
+
+            100% {
+                transform: translateY(0%);
+            }
+        }
+
+        @keyframes textOut {
+            0% {
+                transform: translateY(0%);
+            }
+
+            100% {
+                transform: translateY(-100%);
+
+            }
+        }
+
+        .center-proto {
+            justify-content: center;
+        }
+
+        .card-tipo .card-thumb img {
+            width: 100%;
+            height: auto;
+            object-fit: unset
+        }
+
+        .btn.btn-solid,
+        .tipo-hogar .filtro-cont .btn-solid.btn {
+            color: var(--blue);
+        }
+
+        .crema {
+            color: var(--cream) !important;
+        }
+
+        .titulo-azul {
+            color: var(--blue) !important;
+        }
+
+
+        .btn-flotante-wpp {
+            position: fixed;
+            bottom: 80px;
+            /* Ajusta la distancia respecto al borde inferior */
+            right: 20px;
+            z-index: 1000;
+            /* display: none; */
+        }
+
+        .btn-flotante-wpp a {
+            display: flex;
+            align-items: center;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-flotante-wpp img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+        }
+
+        .popup-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            display: none;
+        }
+
+        .popup-content {
+            background: #fff;
+            padding: 0;
+            border-radius: 12px;
+            max-width: 90%;
+            width: 800px;
+            position: relative;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        .popup-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 8px;
+            right: 12px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: #fff;
+            background: #00000088;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            text-align: center;
+            line-height: 32px;
+        }
+
+        @media (max-width: 480px) {
+            .popup-content {
+                width: 95%;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <img src="https://casas-javer.github.io/lnd-QRO-massaro/assets/images/massaro-banner.jpg"
+                alt="Banner promoción massaro" class="popup-img" />
+        </div>
+    </div>
+
+    <!-- <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P68DJB7" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+        </noscript> -->
+    <div class="main-header">
+        <div class="contw">
+            <div class="logo">
+                <picture>
+                    <!-- <source srcset="https://www.javer.com.mx/casasencancun/assets/images/javer.webp" type="image/webp"> -->
+                    <img loading="lazy" src="img/logo-javer.png" alt="Casas Javer" width="159" height="40"
+                        class="img-fluid">
+                </picture>
+            </div>
+            <div class="nav-cont">
+                <img width="250" src="assets/images/logo-massaro.png" alt="">
+                <!-- <nav>
+                    <ul>
+                        <li><a href="#tipos">Desarrollos</a></li>
+                        <li><a href="#acerca">Acerca de Querétaro</a></li>
+                    </ul>
+                </nav> -->
+            </div>
+            <!-- <div class="extra"><a href="#contacto" class="btn btn-solid scroll">Solicita información</a></div> -->
+        </div>
+    </div>
+    <!-- <div class="btn-flotante"><a href="#contacto" class="btn btn-solid scroll">Solicita información</a></div> -->
+    <div class="btn-flotante-wpp">
+        <a href="https://wa.me/5215530068948" target="_blank" class="btn btn-solid">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"> WhatsApp
+        </a>
+    </div>
+
+    <a href="#contacto" class="btn btn-flotante btn-solid scroll">Solicita información</a>
+    <div class="main-banner">
+        <div class="frase">
+            <div class="inner">
+                <h1 class="visually-hidden">Querétaro es para vacacionar, invertir, descansar.</h1>
+                <div aria-hidden="true" class="block">
+                    <!--<p>TENEMOS LA LLAVE</p>-->
+                    <!-- <div class="frame">
+                        <ul class="slides">
+                            <li class="slide">vacacionar</li>
+                            <li class="slide">invertir</li>
+                            <li class="slide">descansar</li>
+                        </ul>
+                    </div> -->
+                    <section class="home">
+                        <div class="container">
+                            <div class="row">
+                                <div class="home-text">
+                                    <p class="animate-text">
+                                        <span>Tu casa ideal en Zibatá</span>
+                                    <p>Vive en un lugar único</p>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <a href="#contacto" class="btn  btn-solid scroll mt-4">Solicita información <svg class="icon"
+                            width="10" height="15" viewBox="0 0 20 25" xmlns="http://www.w3.org/2000/svg"
+                            style="margin-top: -4px;">
+                            <path
+                                d="M11.1786 20.215L18.3335 12.6263L20 14.3938L10 25L9.16677 24.1162L0 14.3938L1.66647 12.6263L8.82145 20.215L8.82145 0L11.1786 0L11.1786 20.215Z">
+                            </path>
+                        </svg></a>
+                    <!-- <a href="#tipos"><svg width="20" height="25" viewbox="0 0 20 25" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M11.1786 20.215L18.3335 12.6263L20 14.3938L10 25L9.16677 24.1162L0 14.3938L1.66647 12.6263L8.82145 20.215L8.82145 0L11.1786 0L11.1786 20.215Z"
+                                fill="white" />
+                        </svg></a> -->
+                </div>
+            </div>
+        </div>
+        <div class="back">
+            <video id="videoBanner" class="poster" width="1280" height="720" autoplay loop muted playsinline>
+                <source src="assets/videos/bg-massaro.mp4" type="video/mp4">
+                Tu navegador no soporta la etiqueta video.
+            </video>
+        </div>
+        <script>const vidbanner = document.querySelector("#videoBanner"); vidbanner.play();</script>
+    </div>
+
+    <div style="padding-bottom: 50px;">
+        <section class="home-section home-full-height bg-dark bg-gradient tipo-hogar .contw .title-s1" id="home"
+            data-background="assets/images/bg.svg" style="height: 555px; background-color: #977549;">
+            <div class="titan-caption contw">
+                <div class="caption-content">
+                    <img width="250" src="assets/images/logo-massaro.png" alt="">
+                    <!-- <h2 class=" title-s1 aos-init aos-animate crema" data-aos="fade-up">Arbore Residencial: </h2> -->
+                    <p class="aos-init aos-animate" data-aos="fade-up" style="color: #fff;">Enriquece tu futuro
+                        invirtiendo en una zona de alta plusvalía. Massaro residencial, fraccionamiento dentro de Zibatá
+                        con exclusivas casas con roof garden y amenidades de lujo, donde las familias disfrutarán de la
+                        más alta calidad de vida. Todo lo que necesitas en un solo lugar: estilo de vida, funcionalidad
+                        y comodidad.</p>
+                    <!-- <a class="section-scroll btn btn-border-w btn-round" href="#">cONOCE MÁS</a> -->
+                    <a href="#contacto" class="btn btn-solid btn-sm btn-modal">Estoy interesado <svg width="10"
+                            height="15" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            style="margin-top: -4px;">
+                            <path
+                                d="M11.1786 20.215L18.3335 12.6263L20 14.3938L10 25L9.16677 24.1162L0 14.3938L1.66647 12.6263L8.82145 20.215L8.82145 0L11.1786 0L11.1786 20.215Z"
+                                fill="#323a40"></path>
+                        </svg></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+    <div id="tipos" style="background-color: #977549;">
+        <div class="tipo-hogar">
+            <div class="contw">
+                <div class="text-center">
+                    <div class="title-sm">Oferta</div>
+                    <h2 class="title-s1 mt-2">Conoce nuestro modelo Plus</h2> <br>
+                </div>
+                <!-- <div class="filtro-cont my-5">
+                    <button class="btn btn-solid-outline" data-control=".casas">
+                        <svg width="23" height="22" viewbox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M1 12.0168L10.7929 2.22386C11.1834 1.83333 11.8166 1.83333 12.2071 2.22386L22 12.0168"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M19.6665 9.68311V20.1831H3.33317V9.68311" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <span>Casas</span>
+                    </button>
+                    <button class="btn btn-solid-outline" data-control=".departamentos"><svg width="22" height="24"
+                            viewbox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="5.88867" y="1" width="9.77778" height="22" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M15.6667 12H20.5556V23H1V12V12H5.88889" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg> <span>Departamentos</span>
+                    </button>
+                    <button class="btn btn-solid-outline todos is-active" data-control="*">Mostrar todos
+                    </button>
+                </div> -->
+
+                <!-- <div class="d-none col-12 col-sm-6 col-lg-4 mb-5"></div>
+                <div class="row gridPropiedades">
+                    <template v-for="(item, index) in propiedades">
+                        <div :class="item.categoria | slugCard">
+                            <div class="card-tipo">
+                                <div class="card-thumb">
+                                    <picture>
+                                        <source :srcset="item.thumbnail + '.webp'" type="image/webp"><img loading="lazy"
+                                            :src="item.thumbnail + '.jpg'" :alt="item.titulo" width="900" height="600">
+                                    </picture>
+                                </div>
+                                <div class="card-caption">
+                                    <div class="cc-inner"><span class="tag">{{ item.categoria }}</span>
+                                        <h3 class="cc-title">{{ item.titulo }}</h3><small>{{ item.categoria }} con
+                                            hasta</small>
+                                        <ul class="cc-lista">
+                                            <li><img loading="lazy"
+                                                    src="https://www.javer.com.mx/casasencancun/assets/images/i-t-recamaras.svg"
+                                                    alt="Recámaras" width="38" height="24"> <span>{{ item.cuartos
+                                                    }}</span></li>
+                                            <li><img loading="lazy"
+                                                    src="https://www.javer.com.mx/casasencancun/assets/images/i-t-banos.svg"
+                                                    alt="Baños" width="38" height="32"> <span>{{ item.bano }}</span>
+                                            </li>
+                                            <li><img loading="lazy"
+                                                    src="https://www.javer.com.mx/casasencancun/assets/images/i-t-coche.svg"
+                                                    alt="Estacionamiento" width="38" height="28"> <span>{{
+                                                    item.estacionamiento }}</span></li>
+                                        </ul><button class="btn btn-solid btn-sm btn-modal" data-bs-toggle="modal"
+                                            :data-bs-target="'#modal' + index" :data-slug="item.titulo | slug">Ver
+                                            más</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div> -->
+                <div class="row center-proto" style="position: relative; ">
+
+
+                    <!-- BLANC -->
+                    <div class="col-12 col-sm-6 col-lg-5 mb-5 casas">
+                        <div class="card-tipo">
+                            <div class="card-thumb">
+                                <picture>
+                                    <source srcset="./assets/images/galeria/modelo-alba-rf.png" type="image/webp"><img
+                                        loading="lazy" src="./assets/images/galeria/modelo-alba-rf.png" alt="Arbolada"
+                                        width="900" height="600">
+                                </picture>
+                            </div>
+                            <div class="card-caption">
+                                <div class="cc-inner"><span class="tag">Casas</span>
+                                    <h3 class="titulo-azul">Modelo Alba<br> Roof Garden Plus</h3><small>Casas con
+                                        hasta:</small>
+                                    <ul class="cc-lista">
+                                        <li><img loading="lazy" src="./assets/images/i-t-recamaras.svg" alt="Recámaras"
+                                                width="38" height="24"> <span>3</span></li>
+                                        <li><img loading="lazy" src="./assets/images/i-t-banos.svg" alt="Baños"
+                                                width="38" height="32"> <span>3.5</span></li>
+                                        <li><img loading="lazy" src="./assets/images/i-t-coche.svg"
+                                                alt="Estacionamiento" width="38" height="28"> <span>2</span></li>
+                                    </ul>
+                                    <!-- <button data-bs-toggle="modal" data-bs-target="#modal1" data-slug="arbolada"
+                                        class="btn btn-solid btn-sm btn-modal">Ver
+                                        más</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!--<div class="back">
+                <img loading="lazy" src="assets/images/bg.svg" alt="Banner" width="1440" height="563">
+            </div>
+            <!-- <div class="hoja">
+                <img loading="lazy" src="https://www.javer.com.mx/casasencancun/assets/images/hoja-verde.svg" alt="Hoja"
+                    width="515" height="329" class="img-fluid">
+            </div> -->
+        </div>
+        <!-- <template v-for="(item, index) in propiedades">
+            <div class="modal fade" :id="'modal' + index" tabindex="-1" :aria-labelledby="item.titulo | slug"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="contw">
+                                <div class="logo">
+                                    <h5 class="modal-title visually-hidden" :id="item.titulo | slug">{{ item.titulo }}
+                                    </h5>
+                                    <picture>
+                                        <source :srcset="item.logo + '.webp'" type="image/webp"><img loading="lazy"
+                                            :src="item.logo + '.jpg'" :alt="item.titulo" class="img-fluid"
+                                            :width="item.logo_width" :height="item.logo_height">
+                                    </picture>
+                                </div>
+                                <div class="cerrar"><button type="button" data-bs-dismiss="modal" aria-label="Cerrar"
+                                        title="Cerrar"><img loading="lazy" src="./assets/images/i-cerrar.svg"
+                                            alt="Cerrar" width="56" height="56"></button></div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cont">
+                                <div class="info">
+                                    <h4 class="titulo">{{ item.titulo }}</h4>
+                                    <p>{{ item.descripcion }}</p>
+                                    <hr class="my-4"><small>{{ item.categoria }} con hasta:</small>
+                                    <ul class="cc-lista">
+                                        <li><img loading="lazy" src="./assets/images/i-t-recamaras.svg" alt="Recámaras"
+                                                width="38" height="24"> <span>{{ item.cuartos }}</span>
+                                        </li>
+                                        <li><img loading="lazy" src="./assets/images/i-t-banos.svg" alt="Baños"
+                                                width="38" height="32"> <span>{{ item.bano }}</span></li>
+                                        <li><img loading="lazy" src="./assets/images/i-t-coche.svg"
+                                                alt="Estacionamiento" width="38" height="28"> <span>{{
+                                                item.estacionamiento }}</span></li>
+                                    </ul>
+                                    <hr class="my-4">
+                                    <p><strong>Ubicación</strong></p>
+                                    <p>{{ item.ubicacion }}</p>
+                                    <p v-if="item.maps"><a :href="item.maps" target="_blank" rel="noopener noreferrer"
+                                            class="btn btn-outline-secondary btn-sm">Google Maps</a></p>
+                                    <div v-if="item.brochure" class="mt-4"><a :href="item.brochure" target="_blank"
+                                            rel="noopener noreferrer" class="btn btn-solid">Descargar brochure</a></div>
+                                </div>
+                                <div class="galeria">
+                                    <div v-if="item.galeria" class="galeria-cont">
+                                        <div class="slider">
+                                            <div v-for="pic in item.galeria" class="slide">
+                                                <picture>
+                                                    <source :srcset="pic + '.webp'" type="image/webp"><img
+                                                        loading="lazy" :src="pic + '.jpg'" :alt="item.titulo"
+                                                        width="900" height="600">
+                                                </picture>
+                                            </div>
+                                        </div>
+                                        <div class="controls"><button class="button--previous" title="Anterior"><svg
+                                                    width="52" height="52" viewbox="0 0 52 52" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle r="26" transform="matrix(-1 0 0 1 26 26)" fill="#FF295C" />
+                                                    <path
+                                                        d="M17.785 24.8214L25.3737 17.6665L23.6062 16L13 26L13.8838 26.8332L23.6062 36L25.3737 34.3335L17.785 27.1785L38 27.1786L38 24.8214L17.785 24.8214Z"
+                                                        fill="white" />
+                                                </svg></button> <button class="button--next" title="Siguiente"><svg
+                                                    width="52" height="52" viewbox="0 0 52 52" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg">
+                                                    <circle cx="26" cy="26" r="26" fill="#FF295C" />
+                                                    <path
+                                                        d="M34.215 24.8214L26.6263 17.6665L28.3938 16L39 26L38.1162 26.8332L28.3938 36L26.6263 34.3335L34.215 27.1785L14 27.1786L14 24.8214L34.215 24.8214Z"
+                                                        fill="white" />
+                                                </svg></button></div>
+                                    </div>
+                                    <div v-else class="no-image"><img loading="lazy" class="img-fluid mx-auto d-block"
+                                            src="https://www.javer.com.mx/casasencancun/assets/images/placeholder.png"
+                                            :alt="item.titulo" width="800" height="600"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </template> -->
+    </div>
+
+
+    <div style="padding-top: 50px;">
+        <div class="contw">
+            <div class="row">
+
+                <div class="col-12 my-4" data-aos="fade-up">
+                    <h2 class="titlo-azul">AMENIDADES</h2>
+
+                </div>
+                <div class="col-12">
+                    <!-- <p class="mb-4" data-aos="fade-up"><strong>Cada ciudad en el estado cuenta con una escencia
+                                única.</strong></p> -->
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 item mb-5" data-aos="fade-up">
+                            <picture>
+                                <source srcset="./assets/images/amenidades/juego-infantil.png" type="image/webp"><img
+                                    loading="lazy" src="./assets/images/amenidades/juego-infantil.png" alt="Cancún"
+                                    width="522" height="426" class="img-fluid mx-auto d-block">
+                            </picture>
+                            <!-- <h4>Parque lineal</h4> -->
+                            <!-- <p>Una ciudad histórica y cultural que cuenta con un centro histórico bien conservado,
+                                    así como con una variedad de museos, teatros y festivales.</p> -->
+                        </div>
+                        <div class="col-sm-6 col-md-4 item mb-5" data-aos="fade-up">
+                            <picture>
+                                <source srcset="./assets/images/amenidades/alberca-amenidad.png" type="image/webp"><img
+                                    loading="lazy" src="./assets/images/amenidades/alberca-amenidad.png"
+                                    alt="Playa del Cármen" width="522" height="426" class="img-fluid mx-auto d-block">
+                            </picture>
+                            <!-- <h4>Casa club</h4> -->
+                            <!-- <p>Una ciudad industrial y comercial ubicada al norte de Querétaro, es un importante
+                                    centro de producción de textiles y calzado.</p> -->
+                        </div>
+                        <div class="col-sm-6 col-md-4 item mb-5" data-aos="fade-up">
+                            <picture>
+                                <source srcset="./assets/images/amenidades/casa-club-amenidad.png" type="image/webp">
+                                <img loading="lazy" src="./assets/images/amenidades/casa-club-amenidad.png" alt="Tulum"
+                                    width="522" height="426" class="img-fluid mx-auto d-block">
+                            </picture>
+                            <!-- <h4>Ingreso controlado</h4> -->
+                            <!-- <p>Un popular destino turístico ubicado al sur de Querétaro, es conocido por sus aguas
+                                    termales, sus viñedos y su gastronomía.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="hoja"><img loading="lazy"
+                    src="https://www.javer.com.mx/casasencancun/assets/images/hoja-verde.svg" alt="Hoja" width="515"
+                    height="329" class="img-fluid"></div> -->
+
+
+    </div>
+    <div class="contacto" id="contacto">
+        <div class="contw">
+            <div class="row">
+                <div class="col-md-5 mb-4">
+                    <div class="info">
+                        <h5 class="title-sm">CONTÁCTANOS</h5>
+                        <h2 class="titulo-azul">
+                            VIVE EN UN ENTORNO RESIDENCIAL
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="formulario">
+                        <h2>Déjanos tu mensaje</h2>
+                        <p class="mb-4 text-white">Un asesor se pondrá en contacto a la brevedad.</p>
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: Please add the following <META> element to your page <HEAD>.      -->
+                        <!--  If necessary, please modify the charset parameter to specify the        -->
+                        <!--  character set of your HTML page.                                        -->
+                        <!--  ----------------------------------------------------------------------  -->
+
+                        <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
+                        <script src="https://www.google.com/recaptcha/api.js"></script>
+                        <script>
+                            function timestamp() {var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value); elems["ts"] = JSON.stringify(new Date().getTime()); document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);} } setInterval(timestamp, 500); 
+                        </script>
+
+                        <!--  ----------------------------------------------------------------------  -->
+                        <!--  NOTE: Please add the following <FORM> element to your page.             -->
+                        <!--  ----------------------------------------------------------------------  -->
+
+                        <form class="contacto-outer contact-form "
+                            action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8&orgId=00Do0000000b6Io"
+                            method="POST">
+
+                            <input type=hidden name='captcha_settings'
+                                value='{"keyname":"CAPCHA_MASSARO","fallback":"true","orgId":"00Do0000000b6Io","ts":""}'>
+                            <input type=hidden name="oid" value="00Do0000000b6Io">
+                            <input type=hidden name="retURL"
+                                value="https://www.javer.com.mx/gracias?utm_source=google&utm_medium=leads&utm_campaign=massaro&utm_term=marketing">
+
+                            <!--  ----------------------------------------------------------------------  -->
+                            <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+                            <!--  these lines if you wish to test in debug mode.                          -->
+                            <!--  <input type="hidden" name="debug" value=1>                              -->
+                            <!--  <input type="hidden" name="debugEmail" value="pcantu@javer.com.mx">     -->
+                            <!--  ----------------------------------------------------------------------  -->
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="form-group mb-4">
+                                        <label for="first_name">Nombre*</label>
+                                        <input class="form-control" maxlength="40" name="first_name" size="20"
+                                            type="text"
+                                            title="El nombre sólo acepta letras, espacios en blanco y un mínimo de 4 caracteres"
+                                            pattern="[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]{4,80}" required />
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group mb-4">
+                                        <label for="middle_name">Apellido paterno</label>
+                                        <input type="text" maxlength="40" class="form-control" id="middle_name"
+                                            name="middle_name">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-group mb-4">
+                                        <label for="last_name">Apellido materno</label>
+                                        <input class="form-control" id="last_name" maxlength="80" name="last_name"
+                                            size="20" maxlength="40" type="text" />
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-4">
+                                        <label for="phoneInput" class="form-label">Teléfono*</label>
+                                        <div class="input-group mb-3">
+                                            <!-- <span class="input-group-text">+52</span>
+                                            <input type="tel" class="form-control" id="phoneInput" maxlength="10"
+                                                minlength="10" size="10" required=""
+                                                oninput="document.getElementById('phone').value = this.value"> -->
+                                            <!--<input type="hidden" maxlength="40" name="phone" size="20" type="text"
+                                                title="Teléfono debe tener entre 8 y 10 dígitos" pattern="[0-9]{8,10}"
+                                                required /> -->
+                                            <input pattern="[0-9]{8,10}" class="form-control" maxlength="40"
+                                                name="phone" size="20" type="text"
+                                                title="El teléfono debe contener entre 8 y 10 dígitos" required />
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group mb-4">
+                                        <!-- <label for="email">Correo electrónico</label>
+                                        <input type="email" class="form-control" id="email" name="email" required> -->
+                                        <label for="email">Email*</label>
+                                        <input class="form-control" maxlength="80" name="email" size="20" type="email"
+                                            title="El email no es válido"
+                                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" required />
+                                    </div>
+                                </div>
+
+                                <!-- Aviso de privacidad -->
+                                <div class="col-12 col-md-6 col-lg-7">
+                                    <div class="form-group mb-4">
+                                        <div class="form-check">
+                                            <input type="checkbox" class="form-check-input" id="aviso" name="aviso">
+                                            <label class="form-check-label" for="aviso">Acepto Políticas de
+                                                Privacidad</label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-6 col-lg-5">
+                                    <div class="form-group mb-4">
+                                        <a class="text-white" href="https://www.javer.com.mx/avisos-de-privacidad"
+                                            target="_blank" rel="noopener noreferrer">Ver Aviso de Privacidad</a>
+                                    </div>
+                                </div>
+
+                                <select id="00N3l00000Q7A54" name="00N3l00000Q7A54" title="FraccionamientoInterno">
+
+                                    <option selected value="MASSARO">MASSARO</option>
+
+                                </select>
+
+                                <select type="hidden" id="00N3l00000Q7A4n" name="00N3l00000Q7A4n"
+                                    title="Canal de Venta">
+                                    <option selected value="Medios Digitales">Medios Digitales</option>
+                                </select>
+
+                                <select type="hidden" id="00N3l00000Q7A5S" name="00N3l00000Q7A5S"
+                                    title="Subcanal de Venta">
+                                    <option selected value="Micrositios">Micrositios</option>
+                                </select>
+
+                                <select type="hidden" id="00N3l00000Q7A57" name="00N3l00000Q7A57" title="Fuente">
+
+                                    <option selected value="Landing_Querétaro">Landing_Querétaro</option>
+
+                                </select>
+
+                                <div class="g-recaptcha" data-sitekey="6LdzUFgrAAAAAJX8qcU8nKtljUDPajXFylRBTdxd"></div>
+
+                                <input id="enviar" disabled class="btn btn-solid button" type="submit" name="submit">
+                            </div>
+                        </form>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="hoja"><img loading="lazy" src="https://www.javer.com.mx/casasencancun/assets/images/hoja-verde.svg"
+                alt="Hoja" width="515" height="329" class="img-fluid"></div> -->
+    <!-- <div class="wave">
+            <img loading="lazy"
+                src="https://www.javer.com.mx/casasencancun/assets/images/wave-naranja.svg" alt="Hoja" width="991"
+                height="195">
+        </div> -->
+    </div>
+    <footer style="margin-top: 2rem;" class="main-footer">
+        <div class="contw">
+            <div class="row align-items-center">
+                <div class="col-12 col-sm-6">
+                    <div class="info">
+                        <div class="title-s1 text-white mb-3">Más información</div>
+                        <a class="btn btn-solid" href="https://www.javer.com.mx/fraccionamientos/jalisco/arbore"
+                            target="_blank" rel="noopener noreferrer" style="
+    padding-top: 22px;
+">CONOCE MÁS <svg width="10" height="15" viewBox="0 0 20 25" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                style="margin-top: -4px;transform: rotate(270deg);">
+                                <path
+                                    d="M11.1786 20.215L18.3335 12.6263L20 14.3938L10 25L9.16677 24.1162L0 14.3938L1.66647 12.6263L8.82145 20.215L8.82145 0L11.1786 0L11.1786 20.215Z"
+                                    fill="#313a41"></path>
+                            </svg></a>
+                        <!-- <span style="color: white;"> 
+                            <svg version="1.1" id="Capa_1"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                viewBox="0 0 449.39 449.39" xml:space="preserve" fill="#fff" style="width: 20px;">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <g>
+                                        <path style="fill:#ffffff;"
+                                            d="M227.459,0.072l-0.012-0.009h-0.271C226.347,0.057,225.533,0,224.701,0 C100.797,0,0,100.797,0,224.695C0,348.593,100.797,449.39,224.695,449.39c123.897,0,224.695-100.797,224.695-224.695 C449.39,101.724,350.08,1.564,227.459,0.072z M233.478,157.014c30.591-1.152,58.323-8.163,82.733-18.104 c9.436,22.969,15.959,48.76,17.034,77.001h-99.768V157.014z M215.912,215.912h-99.768c1.078-28.264,7.577-54.055,17.005-77.019 c24.416,9.952,52.163,16.968,82.763,18.121V215.912z M98.639,215.912H17.771c1.878-44.786,18.063-85.907,44.072-118.966 c15.084,11.896,33.633,24.339,55.279,34.837C106.981,156.439,99.745,184.68,98.639,215.912z M98.584,233.478 c1.2,31.117,8.331,59.232,18.598,84.101c-21.671,10.498-40.238,22.958-55.333,34.856C35.84,319.379,19.65,278.261,17.777,233.478 H98.584z M116.167,233.478h99.745v58.907c-30.428,1.138-58.038,8.073-82.348,17.937 C124.043,287.41,117.385,261.691,116.167,233.478z M233.478,233.478h99.745c-1.219,28.201-7.892,53.932-17.417,76.844 c-24.308-9.863-51.908-16.793-82.334-17.937v-58.907H233.478z M350.805,233.478h80.813c-1.876,44.783-18.069,85.907-44.075,118.969 c-15.106-11.916-33.701-24.381-55.384-34.891C342.429,292.682,349.599,264.573,350.805,233.478z M350.829,215.912 c-1.069-31.137-8.103-59.313-18.292-84.252c21.534-10.472,39.986-22.864,55.007-34.714c26.012,33.059,42.199,74.18,44.075,118.961 h-80.79V215.912z M376.096,83.606c-13.929,10.938-30.969,22.343-50.73,32.007C303.5,70.76,272.383,37.997,251.604,19.37 C300.481,25.746,344.042,49.255,376.096,83.606z M308.956,122.909c-22.38,9.04-47.688,15.404-75.478,16.539V27.069 C252.175,43.125,285.895,76.27,308.956,122.909z M215.912,27.052v112.39c-27.807-1.135-53.124-7.51-75.515-16.565 C163.46,76.201,197.206,43.077,215.912,27.052z M197.995,19.347c-12.628,11.539-27.286,26.78-38.942,41.501 c-11.588,14.638-24.09,33.133-34.729,54.904c-19.89-9.697-37.027-21.153-51.033-32.146 C105.394,49.201,149.028,25.68,197.995,19.347z M73.285,365.781c14.023-11.007,31.189-22.482,51.116-32.181 c22.26,45.265,53.961,78.131,75.023,96.635C149.872,424.163,105.706,400.512,73.285,365.781z M140.877,326.304 c22.271-8.943,47.434-15.232,75.035-16.354v111.284C197.329,405.292,163.918,372.477,140.877,326.304z M233.478,421.235V309.951 c27.595,1.127,52.748,7.41,75.021,16.354C285.449,372.449,252.055,405.281,233.478,421.235z M250.186,430.201 c20.619-18.264,52.389-51.188,74.746-96.623c19.944,9.709,37.133,21.191,51.164,32.203 C343.727,400.478,299.641,424.105,250.186,430.201z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg> javer.com.mx</span> -->
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 text-start text-sm-end extras">
+                    <div class="mb-4"><a href="https://www.javer.com.mx" target="_blank" rel="noopener noreferrer"><img
+                                src="img/logo-javer.png" alt="Casas Javer" width="119" height="30"></a></div><a
+                        href="https://www.javer.com.mx/avisos-de-privacidad" target="_blank"
+                        rel="noopener noreferrer">Aviso de privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-1V995LWDGC"></script> -->
+    <script src="./scripts.js"></script>
+    <script src="./assets/js-min/main.js"></script>
+
+    <script>
+        const txts = document.querySelector(".animate-text").children,
+            txtsLen = txts.length;
+        let index = 0;
+        const textInTimer = 3000,
+            textOutTimer = 3000;
+
+        function animateText() {
+            for (let i = 0; i < txtsLen; i++) {
+                txts[i].classList.remove("text-in", "text-out");
+            }
+            txts[index].classList.add("text-in");
+
+            setTimeout(function () {
+                txts[index].classList.add("text-out");
+            }, textOutTimer)
+
+            setTimeout(function () {
+
+                if (index == txtsLen - 1) {
+                    index = 0;
+                }
+                else {
+                    index++;
+                }
+                animateText();
+            }, textInTimer);
+        }
+
+        window.onload = animateText;
+
+    </script>
+
+    <!-- Script para timestamp del reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function timestamp() {
+            const response = document.getElementById("g-recaptcha-response");
+            if (!response || response.value.trim() === "") {
+                const elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);
+                elems["ts"] = JSON.stringify(new Date().getTime());
+                document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems);
+            }
+        }
+        setInterval(timestamp, 500);
+
+        window.addEventListener('load', function () {
+            setTimeout(function () {
+                document.getElementById('popup').style.display = 'flex';
+            }, 1000);
+        });
+
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+    </script>
+    <script>
+        const d = document;
+        const $form = d.querySelector(".contact-form"),
+            $inputs = d.querySelectorAll(".contact-form [required]");
+
+        // Crear spans para mostrar errores bajo cada input requerido
+        $inputs.forEach(input => {
+            const $span = d.createElement("span");
+            $span.id = input.name;
+            $span.textContent = input.title;
+            $span.classList.add("contact-form-error", "none");
+            input.insertAdjacentElement("afterend", $span);
+        });
+
+        // Validación en tiempo real con patrón y mostrar/ocultar mensaje
+        d.addEventListener("keyup", (e) => {
+            if (e.target.matches(".contact-form [required]")) {
+                const $input = e.target;
+                const pattern = $input.pattern || $input.dataset.pattern;
+                const $errorSpan = d.getElementById($input.name);
+
+                if (pattern && $input.value !== "") {
+                    const regex = new RegExp(pattern);
+                    const isValid = regex.test($input.value);
+
+                    if (!isValid) {
+                        $errorSpan.classList.add("is-active");
+                    } else {
+                        $errorSpan.classList.remove("is-active");
+                    }
+                } else {
+                    $errorSpan.classList.remove("is-active");
+                }
+            }
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const telefonoInput = document.querySelector('input[name="phone"]');
+            const emailInput = document.querySelector('input[name="email"]');
+            const first_nameInput = document.querySelector('input[name="first_name"]');
+            const checkboxTerminos = document.getElementById('aviso');
+            const botonEnviar = document.getElementById('enviar');
+
+            // Función para validar campos y checkbox y controlar botón
+            function validarBoton() {
+                const telefonoVal = telefonoInput.value.trim();
+                const emailVal = emailInput.value.trim();
+                const firstNameVal = first_nameInput.value.trim();
+
+                if (telefonoVal !== "" && emailVal !== "" && firstNameVal !== "" && checkboxTerminos.checked) {
+                    botonEnviar.disabled = false;
+                } else {
+                    botonEnviar.disabled = true;
+                }
+            }
+
+            // Normalizar y limitar teléfono a 10 dígitos
+            telefonoInput.addEventListener('input', function () {
+                let valor = this.value.trim();
+                valor = valor.replace(/\D/g, '').substring(0, 10);
+                this.value = valor;
+                validarBoton();
+            });
+
+            // Solo letras y espacios en nombre, máximo 80 caracteres
+            first_nameInput.addEventListener('input', function () {
+                let valor = this.value;
+                let newValue = '';
+                for (let i = 0; i < valor.length; i++) {
+                    const char = valor.charAt(i);
+                    if (/^[A-Za-zÁáÉéÍíÓóÚúÜüÑñ\s]$/.test(char)) {
+                        newValue += char;
+                    }
+                }
+                this.value = newValue.substring(0, 80);
+                validarBoton();
+            });
+
+            // Limitar email a 100 caracteres y quitar espacios inicio/fin
+            emailInput.addEventListener('input', function () {
+                let valor = this.value.trim();
+                if (valor.length > 100) valor = valor.substring(0, 100);
+                this.value = valor;
+                validarBoton();
+            });
+
+            // Checkbox
+            checkboxTerminos.addEventListener('change', validarBoton);
+
+            // Inicializar botón deshabilitado
+            botonEnviar.disabled = true;
+        });
+    </script>
+</body>
+
+</html>
